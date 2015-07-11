@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/host_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Host Game"
+        android:textSize="40dp"
+        android:onClick="onHost"/>
+    <Button
+        android:id="@+id/disc_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/host_button"
+        android:text="Re-discover"
+        android:textSize="40dp"
+        android:onClick="onDiscover"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disc_button"
+        android:text="Join Game"
+        android:textSize="40dp" 
+        android:onClick="onJoin"/>
+
+</RelativeLayout>
